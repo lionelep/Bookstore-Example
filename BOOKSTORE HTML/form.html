@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Navbar Code-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">My Library</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/books.html" class="navbar__links">Books</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/prices.html" class="navbar__links">Prices</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="form.html" class="button">Reserve a Book Now!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Main Section-->
+    <div class="main">
+        <div class="main__container">
+            <h2 style="color:#E93479;">Book Form</h2>
+
+            <form action="/action_page.php">
+             <label for="fname" style="color: #E93479;">First name:</label><br>
+             <input type="text" id="fname" name="fname" value=""><br>
+             <label for="lname" style="color: #E93479;">Last name:</label><br>
+             <input type="text" id="lname" name="lname" value=""><br>
+             <label for="sid" style="color: #E93479;">Student ID:</label><br>
+             <input type="text" id="sid" name="sid" value=""><br>
+             <label for="books" style="color: #E93479;">Choose a book:</label><br>
+            <select id="books" name="books">
+             <option value="n/a"></option>
+             <option value="aot">Attack on Titan</option>
+             <option value="bsk">Berserk</option>
+             <option value="got">A Game of Thrones</option>
+             <option value="tw">The Witcher</option>
+             <option value="jjba">JoJo's Bizzare Adventure</option>
+             <option value="dn">Dune</option>
+             <option value="kd">Kingdom</option>
+             <option value="opm">One Punch Man</option>
+            </select>
+             <input type="submit" value="Submit">
+            </form> 
+              
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
